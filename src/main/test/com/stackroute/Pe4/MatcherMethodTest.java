@@ -45,6 +45,16 @@ public class MatcherMethodTest {
         assertEquals("Empty", result);
 
     }
+    @Test
+    public void givenStringShouldReturnNull() {
+        //arrange
+
+        //Act
+        String result= matcherMethod.match("She sells seashells by the seashore","8");
+        //Assert
+        assertEquals("String Null", result);
+
+    }
 
 
     }

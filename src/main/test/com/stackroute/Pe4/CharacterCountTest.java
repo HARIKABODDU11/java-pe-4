@@ -37,9 +37,30 @@ public class CharacterCountTest {
         //arrange
 
         //Act
+        String result= characterCount.count("",'a');
+        //Assert
+        assertEquals("empty", result);
+
+    }
+
+    @Test
+    public void givenStringShouldReturnNull() {
+        //arrange
+
+        //Act
         String result= characterCount.count(null,'a');
         //Assert
-        assertEquals(null, result);
+        assertEquals("occurence of A :0", result);
+
+    }
+    @Test
+    public void givenStringShouldReturnErrorMessage() {
+        //arrange
+
+        //Act
+        String result= characterCount.count("",'*');
+        //Assert
+        assertEquals("empty", result);
 
     }
 

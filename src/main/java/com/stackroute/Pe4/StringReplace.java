@@ -5,6 +5,9 @@ public class StringReplace {
         if(str=="") {
             return "empty";
         }
+        else if(str==null){
+            return "null";
+        }
         String rs = str.replace("d", "f"); // Replace 'h' with 's'
         rs = rs.replace("l", "t");
 

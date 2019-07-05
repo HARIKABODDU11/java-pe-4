@@ -38,7 +38,7 @@ public class TransposeStringTest {
         //arrange
 
         //Act
-        String result= transposeString.transpose("a quick brown fox jumps over the lazy dog");
+        String result= transposeString.transpose("");
         //Assert
         assertEquals("a kciuq nworb xof spmuj revo eht yzal god", result);
 

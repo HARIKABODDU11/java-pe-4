@@ -44,4 +44,15 @@ public class StringReplaceTest {
 
     }
 
+    @Test
+    public void givenStringShouldReturnNull() {
+        //arrange
+
+        //Act
+        String result= stringReplace.stringRepl(null);
+        //Assert
+        assertEquals("null", result);
+
+    }
+
 }

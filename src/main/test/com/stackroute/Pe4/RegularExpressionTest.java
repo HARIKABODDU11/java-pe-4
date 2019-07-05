@@ -49,6 +49,16 @@ public class RegularExpressionTest {
         //arrange
 
         //Act
+        boolean result= regularExpression.expression(null);
+        //Assert
+        assertEquals(false, result);
+
+    }
+    @Test
+    public void givenStringShouldReturnEmpty() {
+        //arrange
+
+        //Act
         boolean result= regularExpression.expression("");
         //Assert
         assertEquals(false, result);
